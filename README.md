@@ -25,7 +25,7 @@ conda activate style
 
 ## Training
 
-To train, we can run the following command:
+To train our unified style model, we can run the following command:
 
 ```
 # For a100, 200k
