@@ -1,5 +1,27 @@
 # STEERStyleTransfer
 
+This is the repository for the 2023 EMNLP Findings Paper, ["🐂 STEER: Unified Style Transfer with Expert Reinforcement"](https://arxiv.org/abs/2311.07167)
+
+<p align="center">
+  <img src="steer_method.png" alt="drawing" width="75%"/>
+</p>
+
+
+# Getting Started
+
+## Setting up the Environment
+To set up the environment to run the code, make sure to have conda installed, then run
+
+```
+conda env create -f environment.yml
+```
+Then, activate the environment:
+
+```
+conda activate style
+```
+
+## Compute Requirements
 
 # Citing this work
 If you use/reference this work, please cite us with:
