@@ -23,6 +23,38 @@ conda activate style
 
 ## Compute Requirements
 
+## Training
+
+To train, we can run the following command:
+
+```
+# For a100, 200k
+python3 main.py \
+    --precomputed_dataset_dir hallisky/STEER-data-top-400k-combo \
+    --n_extra_tokens 5 \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
+    --temperature 1.0 \
+    --reward_model_dir hallisky/cds_style_classifier \
+    --batch_size 300 \
+    --dataset_partition 10 \
+    --num_examples_val 100 \
+    --num_examples_train 1000 \
+    --total_episodes 20000000 \
+    --lr 5e-4 \
+    --num_warmup_steps 500 \
+    --max_gen_length 50 \
+    --top_p 0.9 \
+    --sample_interval 2500 \
+    --save_interval 100 \
+    --eval_interval 100 \
+    --kl_coef 0.0 \
+    --entropy_coef 0.0 \
+    --no_repeat_ngrams 0 \
+    --multiple_reward_tokens \
+    --save_naming product_5e-4_p0.9_800k_bs128_multi \
+```
+
 # Citing this work
 If you use/reference this work, please cite us with:
 
