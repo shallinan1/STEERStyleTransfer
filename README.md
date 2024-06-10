@@ -3,7 +3,7 @@
 This is the repository for the 2023 EMNLP Findings Paper, ["🐂 STEER: Unified Style Transfer with Expert Reinforcement"](https://arxiv.org/abs/2311.07167)
 
 <p align="center">
-  <img src="steer_method.png" alt="drawing" width="75%"/>
+  <img src="steer_method.png" alt="drawing" width="100%"/>
 </p>
 
 
