@@ -25,8 +25,10 @@ conda activate style
 
 We need to download a few resources for STEER.
 
-* Download the GPT2-large paraphraser from [Google Drive](https://drive.google.com/drive/folders/1hB0lJt4MjuWbgdY7_I_2eISAoNmM6O9f); it is the folder named `paraphraser_gpt2_large`. Place this model in the following directory: `models/paraphraser_gpt2_large`. (TODO: upload this to huggingface)
+* **Base Model** Download the GPT2-large paraphraser from [Google Drive](https://drive.google.com/drive/folders/1hB0lJt4MjuWbgdY7_I_2eISAoNmM6O9f); it is the folder named `paraphraser_gpt2_large`. Place this model in the following directory: `models/paraphraser_gpt2_large`. (TODO: upload this to huggingface)
 
+* **CDS Synthetic Parallel Training Dataset** Our filtered dataset is located on [HuggingFace](https://huggingface.co/datasets/hallisky/STEER-data-top-400k-combo/tree/main). However, since the huggingface `load_dataset` function has an issue, we must manually download `top400k_data_combo.jsonl`. Place the data in the following directory: `training_data_topk/top400k_data_combo.jsonl`.
+  
 ### (Optional) Downloading resources for offline use
 
 Though the STEER code will automatically download models as the code progresses, we can also pre-cache these values by downloading them first. Use the following code to download the other models used in the code:
@@ -34,6 +36,8 @@ Though the STEER code will automatically download models as the code progresses,
 ```
 python3 download_all_models.py
 ```
+
+If you do this, make sure the `cache_dir` in `main.py` matches the `cache_dir` specified in `download_all_models.py`.
 
 ## Compute Requirements
 
