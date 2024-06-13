@@ -784,12 +784,12 @@ bs 128, 256
 
 # For A100, 4 GPUS
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data_topk/top200k_data_combo.jsonl \
+    --precomputed_dataset_dir training_data_topk/top200k_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 256 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -809,12 +809,12 @@ python3 main.py \
     
 # For A100, 4 GPUS
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent_5buckets/min0_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_100percent_5buckets/min0_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 256 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -835,12 +835,12 @@ python3 main.py \
 
 # Batch size 324, multi reward
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 324 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -861,12 +861,12 @@ python3 main.py \
     
 # Batch size 128, multi reward
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -887,12 +887,12 @@ python3 main.py \
 
 # Batch size 128, multi reward, kl coef
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_50percent_5buckets_min5k/min0.001_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -913,12 +913,12 @@ python3 main.py \
 
 # Batch size 128 with min 5k dataset
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl\
+    --precomputed_dataset_dir training_data/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl\
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -939,12 +939,12 @@ python3 main.py \
 
 # Batch size 128
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent/min0_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_100percent/min0_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -964,12 +964,12 @@ python3 main.py \
 
 # Batch size 64, higher learning rate
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 64 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -990,12 +990,12 @@ python3 main.py \
 
 # Batch size 64, higher learning rate
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent/min0_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_100percent/min0_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 64 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1018,12 +1018,12 @@ python3 main.py \
     
 # CONTINUE training from checkpoint command
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent_5buckets_min20k/min0.1_balanced_data_combo.jsonl \
+    --precomputed_dataset_dir training_data/uniform_100percent_5buckets_min20k/min0.1_balanced_data_combo.jsonl \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1040,7 +1040,7 @@ python3 main.py \
     --entropy_coef 0.0 \
     --no_repeat_ngrams 3 \
     --save_naming 15.5k_RESUME \
-    --load_from_ckpt /gscratch/xlab/hallisky/style/outputs/04-18-2023_20:00:52_product_5e-4_p0.9_uniform100min0.1min20k_bs128_multi/model/ckp_17000.pth \
+    --load_from_ckpt outputs/04-18-2023_20:00:52_product_5e-4_p0.9_uniform100min0.1min20k_bs128_multi/model/ckp_17000.pth \
     --multiple_reward_tokens
 
 
@@ -1049,12 +1049,12 @@ python3 main.py \
 
 # CONTINUE training from checkpoint command number 2 (batch size 256)
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/uniform_100percent_5buckets_min1k/min0.05_balanced_data_combo.jsonl\
+    --precomputed_dataset_dir training_data/uniform_100percent_5buckets_min1k/min0.05_balanced_data_combo.jsonl\
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 256 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1071,7 +1071,7 @@ python3 main.py \
     --entropy_coef 0.0 \
     --no_repeat_ngrams 3 \
     --save_naming RESUME \
-    --load_from_ckpt /gscratch/xlab/hallisky/style/outputs/04-17-2023_06:37:11_product_5e-4_p0.9_uniform100min0.1min20k_bs256_multi/model/ckp_20000.pth
+    --load_from_ckpt outputs/04-17-2023_06:37:11_product_5e-4_p0.9_uniform100min0.1min20k_bs256_multi/model/ckp_20000.pth
 
     
     #####
@@ -1107,12 +1107,12 @@ python3 main.py \
 
     # Try out the old data
     python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data/OLD/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl  \
+    --precomputed_dataset_dir training_data/OLD/uniform_100percent_5buckets_min20k/min0_balanced_data_combo.jsonl  \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 128 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1138,12 +1138,12 @@ TRY USING
 
 # For a100, 200k
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data_topk/top200k_data_combo.jsonl  \
+    --precomputed_dataset_dir training_data_topk/top200k_data_combo.jsonl  \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 300 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1165,12 +1165,12 @@ python3 main.py \
 
 # For a100, 200k SMALL VERISON
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data_topk/top200k_data_combo.jsonl  \
+    --precomputed_dataset_dir training_data_topk/top200k_data_combo.jsonl  \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 300 \
     --dataset_partition 10 \
     --num_examples_val 1 \
@@ -1193,12 +1193,12 @@ python3 main.py \
 ## Weight the other rewards more
 # For a100, 200k
 python3 main.py \
-    --precomputed_dataset_dir /gscratch/xlab/hallisky/style/training_data_topk/top200k_data_combo.jsonl  \
+    --precomputed_dataset_dir training_data_topk/top200k_data_combo.jsonl  \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 300 \
     --dataset_partition 10 \
     --num_examples_val 100 \
@@ -1223,10 +1223,10 @@ python3 main.py \
 python3 main.py \
     --precomputed_dataset_dir hallisky/STEER-data-top-400k-combo  \
     --n_extra_tokens 5 \
-    --init_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
-    --ref_model /gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large \
+    --init_model models/paraphraser_gpt2_large \
+    --ref_model models/paraphraser_gpt2_large \
     --temperature 1.0 \
-    --reward_model_dir /gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
+    --reward_model_dir models/multilabel/03-21-2023_21:54:15/checkpoint-4272 \
     --batch_size 300 \
     --dataset_partition 10 \
     --num_examples_val 100 \

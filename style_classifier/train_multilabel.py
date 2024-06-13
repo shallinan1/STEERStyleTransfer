@@ -209,9 +209,9 @@ if __name__ == "__main__":
     parser.add_argument(
         '--num_labels', type=int, default=11)
     parser.add_argument(
-        '--data_dir', type=str, default='/gscratch/xlab/hallisky/style/datasets/cds', help='datadir')
+        '--data_dir', type=str, default='datasets/cds', help='datadir')
     parser.add_argument(
-        '--output_dir', type=str, default='/gscratch/xlab/hallisky/style/models/multilabel')
+        '--output_dir', type=str, default='models/multilabel')
     parser.add_argument(
         '--pretrained_path', type=str, default=None)
     parser.add_argument(

@@ -13,7 +13,7 @@ def get_args():
     parser.add_argument(
         '--output_dir', type=str, default='outputs')
     parser.add_argument(
-        '--dataset_dir', type=str, default='/gscratch/xlab/hallisky/style/datasets/cds',
+        '--dataset_dir', type=str, default='datasets/cds',
         help='JSONL file containing train prompts. Each row must contain a prompt at `row["prompt"]["text"]`.')
     parser.add_argument(
         '--precomputed_dataset_dir', type=str, default=None,
@@ -33,7 +33,7 @@ def get_args():
     parser.add_argument(
         '--horizon', type=float, default=2500, help='horizon value in adaptive controller')
     parser.add_argument(
-        '--reward_model_dir', type=str, default='/gscratch/xlab/hallisky/style/models/multilabel/03-21-2023_21:54:15/checkpoint-4272')
+        '--reward_model_dir', type=str, default='models/multilabel/03-21-2023_21:54:15/checkpoint-4272')
 
     # KL term
     parser.add_argument(
@@ -52,11 +52,11 @@ def get_args():
 
     # policy / style experts
     parser.add_argument(
-        '--init_model', type=str, default='/gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large', help='language model used for policy.') # gpt2-large
+        '--init_model', type=str, default='models/paraphraser_gpt2_large', help='language model used for policy.') # gpt2-large
     parser.add_argument(
-        '--ref_model', type=str, default='/gscratch/xlab/hallisky/style/models/paraphraser_gpt2_large', help='language model used for reference policy.') # gpt2-large
+        '--ref_model', type=str, default='models/paraphraser_gpt2_large', help='language model used for reference policy.') # gpt2-large
     parser.add_argument(
-        '--expert_dir', type=str, default='/gscratch/xlab/hallisky/style/models/style_gpt2_experts_gpt2large_newpreproc/gpt2_large_preprocessed_eos', help='path to expert models.')
+        '--expert_dir', type=str, default='models/style_gpt2_experts_gpt2large_newpreproc/gpt2_large_preprocessed_eos', help='path to expert models.')
     parser.add_argument(
         '--use_experts', action='store_true', help='whether to use expert style lms')
     parser.add_argument(
