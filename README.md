@@ -21,11 +21,19 @@ Then, activate the environment:
 conda activate style
 ```
 
-## Downloading required models
+## Downloading required resources
 
-We need to download a few models for STEER.
+We need to download a few resources for STEER.
 
 * Download the GPT2-large paraphraser from [Google Drive](https://drive.google.com/drive/folders/1hB0lJt4MjuWbgdY7_I_2eISAoNmM6O9f); it is the folder named `paraphraser_gpt2_large`. Place this model in the following directory: `models/paraphraser_gpt2_large`. (TODO: upload this to huggingface)
+
+### (Optional) Downloading resources for offline use
+
+Though the STEER code will automatically download models as the code progresses, we can also pre-cache these values by downloading them first. Use the following code to download the other models used in the code:
+
+```
+python3 download_all_models.py
+```
 
 ## Compute Requirements
 
