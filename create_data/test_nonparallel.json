@@ -1,0 +1,38 @@
+{
+    "Shakespearean": [
+        "To be, or not to be: that is the question.",
+        "This above all: to thine own self be true.",
+        "All the world's a stage, and all the men and women merely players.",
+        "Good night, good night! Parting is such sweet sorrow.",
+        "Some are born great, some achieve greatness, and some have greatness thrust upon 'em.",
+        "The lady doth protest too much, methinks.",
+        "What's in a name? That which we call a rose by any other name would smell as sweet.",
+        "Cowards die many times before their deaths; the valiant never taste of death but once.",
+        "The course of true love never did run smooth.",
+        "A horse! A horse! My kingdom for a horse!"
+    ],
+    "English Twitter": [
+        "Just saw the craziest thing at the grocery store, lol!",
+        "Can't believe how fast this year is going... #timeflies",
+        "Anyone else watching the new season of that show? 📺🍿",
+        "So tired today... can someone send coffee? ☕😴",
+        "Why is it that every time I'm in a hurry, every traffic light is red? 🚦😫",
+        "Literally just had the best pizza ever 🍕😍",
+        "OMG, it's finally Friday! Who's ready for the weekend? 🎉",
+        "Just finished a 5K run and feeling great! 🏃💪",
+        "I need movie recommendations! What should I watch this weekend? 🎬",
+        "Woke up like this... not ready for Monday. 😅🛌"
+    ],
+    "Formality": [
+        "We regret to inform you that your application has been declined.",
+        "Pursuant to our previous discussion, please find attached the relevant documents.",
+        "We would like to extend our deepest gratitude for your continued support.",
+        "Please be advised that your presence is requested at the upcoming meeting.",
+        "It is with great pleasure that we invite you to participate in the seminar.",
+        "Kindly ensure that all submissions comply with the guidelines provided.",
+        "We are pleased to announce the launch of our new product line.",
+        "Your attention to this matter is highly appreciated and we await your prompt response.",
+        "Upon careful review, we have decided to move forward with the proposal.",
+        "Please accept our apologies for any inconvenience this may have caused."
+    ]
+}

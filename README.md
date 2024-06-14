@@ -43,6 +43,34 @@ python3 download_all_models.py
 
 If you do this, make sure the `cache_dir` in `main.py` matches the `cache_dir` specified in `download_all_models.py`.
 
+### (Optional) Creating own dataset
+
+You can also use  your own data from authors with STEER.
+
+First, note the reward model for target style is based on the CDS style data from the STEER data. You most likely want to re-train the dataset using `style_classifier/train_multilabel.py`. Change lines 40-77 to load and preprocess your own data. See `style_classifier/README.md` for more details on training.
+
+After this, there are two options.
+
+1. Dataset already has parallel pairs of the same text from different authors
+
+* Note * this part requires use of `vllm`, a fast inference library, so you will need to run `pip install vllm` in your conda environment.
+
+Although unlikely, if you already have parallel data from different authors to a target author, you can directly convert your data to the format required for STEER.
+
+We have an example script in `create_data/create_from_parallel.py` for this case with example data (`test_parallel.json`). Essentially, we need to load in the data, score it by running 1) similarity scores 2) fluency scores and 3) target style scores. We then compute an overall score for each data point by multiplying these metrics together. Then, we filter out the top-k data instances by score and save it with the correct columns. 
+
+You can run this code and substitute your input data path, the output save path, the top-k to filter, and your new classifier model. You will also need to make sure the `target_styles`` input into `get_scores` match the target styles in the newly trained model.
+
+2. We have different texts from each author
+
+In this case, we will need to generate synthetic, parallel data from each author in the corpus to get data to the format required for STEER.
+
+The part that differs from the data process in 1) is that we need to *generate* synthetic parallel rewrites from one author to another. A way we can do this is to use few-shot prompting with a large model like Llama-3-8b.
+
+We have an example script at `create_data/create_from_nonparallel.py` for this case with example data (`test_noonparallel.json`). We essentially iterate through texts from each author, and use the language model to make candidate rewrites given a few-shot prompt in another author's style.
+
+Then, as in 1) above, we score, filter, and save.
+
 ## Compute Requirements
 
 ## Training
