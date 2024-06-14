@@ -1,0 +1,90 @@
+[{
+    "input": "To be, or not to be, that is the question:",
+    "output": "To live or die, yo, that's what we questionin',",
+    "source_style": "Shakespeare",
+    "target_style": "Rap"
+},
+{
+    "input": "The slings and arrows of outrageous fortune,",
+    "output": "Life's weapons and blows hit hard, that's certain,",
+    "source_style": "Shakespeare",
+    "target_style": "Modern English"
+},
+{
+    "input": "Whether 'tis nobler in the mind to suffer",
+    "output": "Is it better just to let things slide, to buffer",
+    "source_style": "Shakespeare",
+    "target_style": "Hip-Hop"
+},
+{
+    "input": "It was the best of times, it was the worst of times,",
+    "output": "It was the peak, it was the pit,",
+    "source_style": "Victorian",
+    "target_style": "Rap"
+},
+{
+    "input": "Call me Ishmael.",
+    "output": "Just call me Ishmael.",
+    "source_style": "19th Century American",
+    "target_style": "Modern English"
+},
+{
+    "input": "All happy families are alike; each unhappy family is unhappy in its own way.",
+    "output": "Every chill fam's the same; each stressed fam got its own kinda strain,",
+    "source_style": "Russian Literature",
+    "target_style": "Hip-Hop"
+},
+{
+    "input": "In the beginning God created the heaven and the earth.",
+    "output": "First off, God made the skies and the turf,",
+    "source_style": "Biblical",
+    "target_style": "Rap"
+},
+{
+    "input": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+    "output": "Everyone agrees, a rich single guy definitely needs a wife.",
+    "source_style": "Victorian",
+    "target_style": "Modern English"
+},
+{
+    "input": "The only thing we have to fear is fear itself.",
+    "output": "The only vibe we dodge is fear itself, man,",
+    "source_style": "Early 20th Century Speech",
+    "target_style": "Hip-Hop"
+},
+{
+    "input": "One small step for man, one giant leap for mankind.",
+    "output": "One small step for a dude, a giant jump for all crew,",
+    "source_style": "Historical Speech",
+    "target_style": "Rap"
+},
+{
+    "input": "Elementary, my dear Watson.",
+    "output": "It's simple, Watson.",
+    "source_style": "Victorian Fiction",
+    "target_style": "Modern English"
+},
+{
+    "input": "A horse! A horse! My kingdom for a horse!",
+    "output": "Yo, a horse! A horse! Swap my kingdom for that ride!",
+    "source_style": "Shakespeare",
+    "target_style": "Hip-Hop"
+},
+{
+    "input": "That's one small step for a man, one giant leap for mankind.",
+    "output": "Just a step for him, but it's a mega jump for us all,",
+    "source_style": "Historical Speech",
+    "target_style": "Rap"
+},
+{
+    "input": "I think, therefore I am.",
+    "output": "I think, so yeah, I exist.",
+    "source_style": "Philosophical",
+    "target_style": "Modern English"
+},
+{
+    "input": "The mass of men lead lives of quiet desperation.",
+    "output": "Most dudes just quietly freakin' out,",
+    "source_style": "19th Century American",
+    "target_style": "Hip-Hop"
+}]
