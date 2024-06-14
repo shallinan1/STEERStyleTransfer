@@ -10,7 +10,6 @@ from typing import List, Iterable, Dict, Any
 import torch
 from utils.similarity import compute_sim
 from utils.utils import convert_label_list
-from IPython import embed
 from utils.utils import batchify, batchify_zip, load_jsonl
 import json
 
@@ -112,7 +111,7 @@ class Reward:
             return rewards, labels
         
     def acceptability(self, result: Dict[str, Any]):
-        return result['score'] if result['label'] == 'LABEL_0' else 1 - result['score']
+        return result['score'] if result['label'] == 'LABEL_1' else 1 - result['score']
 
 
 def make_generations_col(generations, responses):
