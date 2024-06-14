@@ -78,9 +78,9 @@ Then, as in 1) above, we score, filter, and save.
 To train our unified style model, we can run the following command:
 
 ```
-# For a100, 200k
+# For a100, 400k
 python3 main.py \
-    --precomputed_dataset_dir hallisky/STEER-data-top-400k-combo \
+    --precomputed_dataset_dir training_data_topk/top400k_data_combo.jsonl \
     --n_extra_tokens 5 \
     --init_model models/paraphraser_gpt2_large \
     --ref_model models/paraphraser_gpt2_large \
@@ -102,7 +102,7 @@ python3 main.py \
     --entropy_coef 0.0 \
     --no_repeat_ngrams 0 \
     --multiple_reward_tokens \
-    --save_naming product_5e-4_p0.9_800k_bs128_multi \
+    --save_naming product_5e-4_p0.9_400k_bs128_multi \
 ```
 
 # Citing this work
